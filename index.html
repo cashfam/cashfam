@@ -247,6 +247,9 @@ login.onclick = function( event ) {
 	var eman = $('#name').val();
 	var ssap = $('#pass').val();
 	var eman = eman.toLowerCase();
+	var ssap = ssap.toLowerCase();
+	var eman = eman.trim();
+	var ssap = ssap.trim();
 
 if (eman == "" || ssap == ""){
 	alert('Please enter Your Username and password');
